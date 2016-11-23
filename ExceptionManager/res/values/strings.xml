@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">画出密码</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="plz_draw_code">Please draw your code</string>
+    <string name="pwd_setted">请设置密码！</string>
+    <string name="pwd_correct">您的密码是正确的.</string>
+    <string name="title_activity_wc">WcActivity</string>
+
+</resources>
