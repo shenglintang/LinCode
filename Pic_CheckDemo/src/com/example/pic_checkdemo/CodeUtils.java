@@ -126,8 +126,8 @@ public class CodeUtils {
 		float skewX = mRandom.nextInt(11) / 10;
 		skewX = mRandom.nextBoolean() ? skewX : -skewX;
 		paint.setTextSkewX(skewX); // float类型参数，负数表示右斜，整数左斜
-		// paint.setUnderlineText(true); //true为下划线，false为非下划线
-		// paint.setStrikeThruText(true); //true为删除线，false为非删除线
+		 paint.setUnderlineText(true); //true为下划线，false为非下划线
+		 paint.setStrikeThruText(true); //true为删除线，false为非删除线
 	}
 
 	// 随机间距

@@ -9,12 +9,90 @@ package com.example.pic_checkdemo;
 
 public final class R {
     public static final class attr {
+        /** 验证时的误差值
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int deviate=0x7f010007;
+        /** 是否需要旋转
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int needRotate=0x7f010006;
+        /** 滑块的高度
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unitHeight=0x7f010000;
+        /** 滑块占图片高度的比例
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unitHeightScale=0x7f010002;
+        /** 滑块边框的图片资源
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int unitShadeSrc=0x7f010004;
+        /** 阴影部分的图片资源
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int unitShowSrc=0x7f010005;
+        /** 滑块的宽度
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unitWidth=0x7f010001;
+        /** 滑块占图片宽度的比例
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unitWidthScale=0x7f010003;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int job_brief_sale1st=0x7f020001;
+        public static final int puzzle_normal=0x7f020002;
+        public static final int puzzle_red_shade=0x7f020003;
+        public static final int puzzle_shade=0x7f020004;
+        public static final int puzzle_show=0x7f020005;
+        public static final int star_shade=0x7f020006;
+        public static final int star_show=0x7f020007;
+        public static final int test=0x7f020008;
     }
     public static final class id {
+        public static final int dy_v=0x7f060002;
         public static final int iv_check=0x7f060000;
+        public static final int sb_dy=0x7f060003;
         public static final int tv_check=0x7f060001;
     }
     public static final class layout {
@@ -52,4 +130,158 @@ public final class R {
          */
         public static final int AppTheme=0x7f050001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a DouYuView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DouYuView_deviate com.example.pic_checkdemo:deviate}</code></td><td>验证时的误差值</td></tr>
+           <tr><td><code>{@link #DouYuView_needRotate com.example.pic_checkdemo:needRotate}</code></td><td>是否需要旋转</td></tr>
+           <tr><td><code>{@link #DouYuView_unitHeight com.example.pic_checkdemo:unitHeight}</code></td><td>滑块的高度</td></tr>
+           <tr><td><code>{@link #DouYuView_unitHeightScale com.example.pic_checkdemo:unitHeightScale}</code></td><td>滑块占图片高度的比例</td></tr>
+           <tr><td><code>{@link #DouYuView_unitShadeSrc com.example.pic_checkdemo:unitShadeSrc}</code></td><td>滑块边框的图片资源</td></tr>
+           <tr><td><code>{@link #DouYuView_unitShowSrc com.example.pic_checkdemo:unitShowSrc}</code></td><td>阴影部分的图片资源</td></tr>
+           <tr><td><code>{@link #DouYuView_unitWidth com.example.pic_checkdemo:unitWidth}</code></td><td>滑块的宽度</td></tr>
+           <tr><td><code>{@link #DouYuView_unitWidthScale com.example.pic_checkdemo:unitWidthScale}</code></td><td>滑块占图片宽度的比例</td></tr>
+           </table>
+           @see #DouYuView_deviate
+           @see #DouYuView_needRotate
+           @see #DouYuView_unitHeight
+           @see #DouYuView_unitHeightScale
+           @see #DouYuView_unitShadeSrc
+           @see #DouYuView_unitShowSrc
+           @see #DouYuView_unitWidth
+           @see #DouYuView_unitWidthScale
+         */
+        public static final int[] DouYuView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007
+        };
+        /**
+          <p>
+          @attr description
+          验证时的误差值
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:deviate
+        */
+        public static final int DouYuView_deviate = 7;
+        /**
+          <p>
+          @attr description
+          是否需要旋转
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:needRotate
+        */
+        public static final int DouYuView_needRotate = 6;
+        /**
+          <p>
+          @attr description
+          滑块的高度
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:unitHeight
+        */
+        public static final int DouYuView_unitHeight = 0;
+        /**
+          <p>
+          @attr description
+          滑块占图片高度的比例
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:unitHeightScale
+        */
+        public static final int DouYuView_unitHeightScale = 2;
+        /**
+          <p>
+          @attr description
+          滑块边框的图片资源
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:unitShadeSrc
+        */
+        public static final int DouYuView_unitShadeSrc = 4;
+        /**
+          <p>
+          @attr description
+          阴影部分的图片资源
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:unitShowSrc
+        */
+        public static final int DouYuView_unitShowSrc = 5;
+        /**
+          <p>
+          @attr description
+          滑块的宽度
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:unitWidth
+        */
+        public static final int DouYuView_unitWidth = 1;
+        /**
+          <p>
+          @attr description
+          滑块占图片宽度的比例
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.pic_checkdemo:unitWidthScale
+        */
+        public static final int DouYuView_unitWidthScale = 3;
+    };
 }
